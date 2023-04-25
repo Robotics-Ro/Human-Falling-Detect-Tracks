@@ -52,17 +52,10 @@ if you have a trouble that illegal instruction
 ```
     export OPENBLAS_CORETYPE=ARMV8 python
 ``` 
-I installed pytorch 1.10.2 relate with CUDA 10.2
-It has a error
 
-import torch
-#####  Returns a bool indicating if CUDA is currently available.
-torch.cuda.is_available()
-#####  False
+issue
 
-So I find this Page
-
-https://blog.naver.com/PostView.naver?blogId=sonyi&logNo=222288776176&parentCategoryNo=&categoryNo=&viewDate=&isShowPopularPosts=false&from=postView
+  raise AssertionError("Torch not compiled with CUDA enabled")
 
 ## Reference
 
