@@ -44,7 +44,19 @@ frames by hand for training ST-GCN model.
     python main.py ${video file or camera source}
 ```
 
+## At Jetson
+
+if you have a trouble that illegal instruction
+
+
+```
+    export OPENBLAS_CORETYPE=ARMV8 python
+``` 
+
+
 ## Reference
 
 - AlphaPose : https://github.com/Amanbhandula/AlphaPose
 - ST-GCN : https://github.com/yysijie/st-gcn
+- Troule&Shooting
+  https://forums.developer.nvidia.com/t/illegal-instruction-core-dumped-xavier/166278
